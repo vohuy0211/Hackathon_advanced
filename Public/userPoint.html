@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Đặt màu nền cho trang */
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Định dạng bảng */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  /* Định dạng tiêu đề cột */
+  th {
+    background-color: #f5f5f5;
+    padding: 10px;
+    text-align: left;
+  }
+
+  /* Định dạng dòng dữ liệu */
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  /* Định dạng dòng dữ liệu đầu tiên */
+  tbody tr:first-child {
+    font-weight: bold;
+  }
+
+  /* Định dạng dòng dữ liệu cho các cột số */
+  td:first-child {
+    font-weight: bold;
+  }
+
+  /* Định dạng cột số thứ tự */
+  td:nth-child(1) {
+    width: 20px;
+  }
+
+  /* Định dạng cột tên người chơi */
+  th:nth-child(2),
+  td:nth-child(2),
+  th:nth-child(3),
+  td:nth-child(3),
+  th:nth-child(4),
+  td:nth-child(4),
+  th:nth-child(5),
+  td:nth-child(5) {
+    width: 100px;
+    text-align: center;
+  }
+
+  /* Định dạng cột số điểm */
+  td:nth-child(2),
+  td:nth-child(3),
+  td:nth-child(4),
+  td:nth-child(5) {
+    text-align: center;
+  }
+
+  tbody td input {
+
+    height: 30px;
+    border-radius: 7px;
+  }
+
+  .btn {
+    padding: 9px 13px;
+    border-radius: 8px;
+    color: white;
+    background-color: #4caf50;
+    border: none;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #68d46a;
+
+  }
+</style>
+
+<body>
+  <div class="wrapper-list">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Minh Cường</th>
+          <th>Thiên Phú</th>
+          <th>Xuân Bách</th>
+          <th>Mạnh Hùng</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sum of scores</td>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>Round 1</td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+        </tr>
+        <tr>
+          <td>Round 2</td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+          <td><input type="number" /></td>
+        </tr>
+      </tbody>
+
+    </table>
+    <br>
+    <button class="btn">
+      Add Round
+    </button>
+  </div>
+</body>
+<script src="userPoint.js"></script>
+
+
+</html>

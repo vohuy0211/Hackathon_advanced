@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  /* Đặt màu nền cho trang */
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Căn giữa phần tử chính */
+  .wrapper-list {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Định dạng tiêu đề */
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Định dạng nút tạo game */
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btn:hover {
+    background-color: #68d46a;
+  }
+
+  /* Định dạng phần nhập tên người chơi */
+  input[type="text"] {
+    width: 94%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  /* Định dạng phần chú thích */
+  p {
+    font-size: 14px;
+    text-align: center;
+    color: #888;
+    margin-top: 10px;
+  }
+</style>
+
+<body>
+  <div class="wrapper-list">
+    <h1>Score keeper</h1>
+    <form id="scoreForm">
+      <input type="text" name="player_1" id="player1" placeholder="Enter player name">
+      <input type="text" name="player_2" id="player2" placeholder="Enter player name">
+      <input type="text" name="player_3" id="player3" placeholder="Enter player name">
+      <input type="text" name="player_4" id="player4" placeholder="Enter player name">
+      <button class="btn" type="submit">
+        Create Game
+      </button>
+    </form>
+  </div>
+</body>
+<script src="./index.js"></script>
+
+</html>
